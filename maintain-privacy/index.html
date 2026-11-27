@@ -19,7 +19,7 @@
   
 <header class="document-header"><a class="brand" href="/maintain-site/"><img src="/maintain-site/assets/icon.png?v=6889e52f856d" width="36" height="36" alt="">Maintain</a></header>
 <main id="main" class="document-main"><h1>Maintain privacy policy</h1>
-<p>Effective <time datetime="2026-11-25">25 November 2026</time></p>
+<p>Effective <time datetime="2026-11-27">27 November 2026</time></p>
 <p>Maintain is provided by Tristan Thomas. This policy explains how Maintain processes your data to help you stay near your chosen weight.</p>
 
 <h2>Your diary and Apple Health</h2>
@@ -32,7 +32,7 @@
 
 <h2>Meal estimates and food lookups</h2>
 <p>When you request an online meal estimate or label reading, Maintain sends the description and photos you provide to OpenAI through Cloudflare. If you request an estimate while offline, it can be sent when you reconnect. The app may use public web sources to estimate a food or read a link you share. Online catalogue lookups send the barcode or product search term to Open Food Facts. On-device catalogue lookups use the downloaded database.</p>
-<p>Maintain disables model response storage and configures its Cloudflare AI Gateway to disable payload logs and caching and use Zero Data Retention where supported. The service keeps an estimate result available for 30 minutes so an interrupted request can recover it. It clears expired results through scheduled cleanup. The service keeps usage records and request fingerprints for the current and previous three calendar months. Limited web-search traces, such as search terms, source paths, and outcomes, are kept for 30 days. Installation security records help authenticate requests. Inactive AI installation keys expire after 180 days.</p>
+<p>Maintain disables model response storage and keeps request and response logging and caching off in Cloudflare AI Gateway. Under <a href="https://developers.openai.com/api/docs/guides/your-data#data-retention-controls-for-abuse-monitoring">OpenAI’s standard API data controls</a>, OpenAI may keep request and response content in abuse-monitoring logs for up to 30 days, subject to the exceptions described there. The service keeps an estimate result available for 30 minutes so an interrupted request can recover it. It clears expired results through scheduled cleanup. The service keeps usage records and request fingerprints for the current and previous three calendar months. Limited web-search traces, such as search terms, source paths, and outcomes, are kept for 30 days. Installation security records help authenticate requests. Inactive AI installation keys expire after 180 days.</p>
 
 <h2>Public food contributions</h2>
 <p>If you enable <strong>Contribute to Open Food Facts</strong>, eligible product corrections, barcodes, package details, and package photos you save can be published in the Open Food Facts database. Your private diary is separate from the submission. Public contributions can already have been copied by other users. Turning off the setting stops future submissions and removes pending contributions from Maintain. The service keeps a limited contribution receipt for up to 30 days. <a href="https://world.openfoodfacts.org/terms-of-use">Open Food Facts terms of use</a>.</p>
